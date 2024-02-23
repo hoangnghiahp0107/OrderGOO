@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomHome"
+        android:icon="@drawable/home">
+    </item>
+    <item android:title="Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomOrder"
+        android:icon="@drawable/fastfood">
+    </item>
+    <item android:title="Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomSetting"
+        android:icon="@drawable/options">
+    </item>
+    <item android:title="Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomBn"
+        android:icon="@drawable/options">
+    </item>
+    <item android:title="Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomCA"
+        android:icon="@drawable/options">
+    </item>
+</menu>
