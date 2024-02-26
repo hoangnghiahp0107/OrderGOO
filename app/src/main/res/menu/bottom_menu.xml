@@ -12,22 +12,16 @@
         android:id="@+id/bottomOrder"
         android:icon="@drawable/fastfood">
     </item>
-    <item android:title="Setting"
+    <item android:title="Cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomCart"
+        android:icon="@drawable/shoppingcart">
+    </item>
+    <item android:title="Settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bottomSetting"
-        android:icon="@drawable/options">
-    </item>
-    <item android:title="Setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottomBn"
-        android:icon="@drawable/options">
-    </item>
-    <item android:title="Setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottomCA"
-        android:icon="@drawable/options">
+        android:icon="@drawable/menu">
     </item>
 </menu>

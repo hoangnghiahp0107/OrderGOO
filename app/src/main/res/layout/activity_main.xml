@@ -10,6 +10,10 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemIconTint="@color/bottom_navi_color"
+        app:labelVisibilityMode="labeled"
+        app:itemActiveIndicatorStyle="@android:color/transparent"
+        app:itemHorizontalTranslationEnabled="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:menu="@menu/bottom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>

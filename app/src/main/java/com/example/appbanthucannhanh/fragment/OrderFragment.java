@@ -1,5 +1,6 @@
 package com.example.appbanthucannhanh.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.appbanthucannhanh.FoodActivity;
 import com.example.appbanthucannhanh.R;
 
 /**
@@ -55,6 +57,7 @@ public class OrderFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
