@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:elevation="9dp"
+        android:background="@color/white"
+        android:clipToOutline="true"
+        android:orientation="vertical">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/kfcbanner"
+            android:id="@+id/home_comboitems_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            ></ImageView>
+        <!--Phần Tên và giá-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:id="@+id/home_comboitems_txtname"
+                android:paddingLeft="10dp"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:text="Nhóm món"
+                android:textAlignment="viewStart"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:textAlignment="textEnd"
+                android:id="@+id/home_comboitems_txtprice"
+                android:paddingRight="10dp"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:text="100.000 đ"
+
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <!-- Phần chi tiết-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/home_comboitems_des"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="chi tiết 1 + chi tiết 2 + chi tiết 3 + chi tiết 4 + chi tiết 5"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addcard_combo"
+            android:backgroundTint="@color/palette_3"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm "
+            ></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

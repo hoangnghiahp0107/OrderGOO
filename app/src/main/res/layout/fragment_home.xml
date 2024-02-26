@@ -1,7 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomeFragment">
-</FrameLayout>
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <!-- Khung shortcut giao hàng -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đặt Ngay"
+                        android:textColor="@color/white"></TextView>
+                    <ImageView
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/delivery_icon"></ImageView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giao Hàng"
+                        android:textColor="@color/white"></TextView>
+                    <ImageView
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/package_icon"></ImageView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" hoặc Mang đi"
+                        android:textColor="@color/white"></TextView>
+                </LinearLayout>
+                <Button
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BẮT ĐẦU ĐẶT HÀNG"
+                    android:textSize="17dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/palette_3"></Button>
+
+            </LinearLayout>
+        <!-- Home's carousel banner -->
+            <ImageView
+                android:id="@+id/home_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kfcbanner"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"></ImageView>
+        <!-- Category's Title -->
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DANH MỤC MÓN ĂN"
+                android:textStyle="bold"
+                android:textSize="25dp">
+            </TextView>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#808080">
+            </View>
+        </LinearLayout>
+             <!-- Category list -->
+             <LinearLayout
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+                 android:layout_marginLeft="15dp"
+     android:layout_marginRight="15dp">
+        <!--row 1-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+           >
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:clipToOutline="true">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kfcbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"></ImageView>
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Hot deal"
+                    android:gravity="center_vertical"
+                    android:textSize="17dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+            <!--2-->
+            <LinearLayout
+                android:layout_marginLeft="25dp"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:clipToOutline="true">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kfcbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"></ImageView>
+                <TextView
+
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Fast food"
+                    android:gravity="center_vertical"
+                    android:textSize="17dp"
+                    android:textStyle="bold"></TextView
+                    >
+
+            </LinearLayout>
+        </LinearLayout>
+                 <!--row 2-->
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="170dp"
+                     android:orientation="horizontal"
+                     android:layout_marginTop="15dp"
+                     >
+                     <LinearLayout
+                         android:layout_width="170dp"
+                         android:layout_height="180dp"
+                         android:background="@color/white"
+                         android:elevation="5dp"
+                         android:orientation="vertical"
+                         android:clipToOutline="true">
+
+                         <ImageView
+                             android:scaleType="centerCrop"
+                             android:src="@drawable/kfcbanner"
+
+                             android:layout_width="match_parent"
+                             android:layout_height="120dp"
+                             android:adjustViewBounds="true"></ImageView>
+                         <TextView
+
+                             android:paddingLeft="10dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:text="Món nước"
+                             android:gravity="center_vertical"
+                             android:textSize="17dp"
+                             android:textStyle="bold"></TextView>
+
+                     </LinearLayout>
+                     <!--2-->
+                     <LinearLayout
+
+                         android:layout_marginLeft="25dp"
+                         android:layout_width="170dp"
+                         android:layout_height="180dp"
+                         android:background="@color/white"
+                         android:elevation="5dp"
+                         android:orientation="vertical"
+                         android:clipToOutline="true">
+
+                         <ImageView
+                             android:scaleType="centerCrop"
+                             android:src="@drawable/kfcbanner"
+                             android:layout_width="match_parent"
+                             android:layout_height="120dp"
+                             android:adjustViewBounds="true"></ImageView>
+                         <TextView
+
+                             android:paddingLeft="10dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:text="Ăn vặt"
+                             android:gravity="center_vertical"
+                             android:textSize="17dp"
+                             android:textStyle="bold"></TextView
+                             >
+
+                     </LinearLayout>
+                 </LinearLayout>
+                 <!--row 3-->
+                 <LinearLayout
+
+                     android:layout_width="match_parent"
+                     android:layout_height="170dp"
+                     android:orientation="horizontal"
+                     android:layout_marginTop="15dp"
+                     >
+                     <LinearLayout
+
+
+                         android:layout_width="170dp"
+                         android:layout_height="180dp"
+                         android:background="@color/white"
+                         android:elevation="5dp"
+                         android:orientation="vertical"
+                         android:clipToOutline="true">
+
+                         <ImageView
+                             android:scaleType="centerCrop"
+                             android:src="@drawable/kfcbanner"
+
+                             android:layout_width="match_parent"
+                             android:layout_height="120dp"
+                             android:adjustViewBounds="true"></ImageView>
+                         <TextView
+
+                             android:paddingLeft="10dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:text="Nước uống"
+                             android:gravity="center_vertical"
+                             android:textSize="17dp"
+                             android:textStyle="bold"></TextView>
+
+                     </LinearLayout>
+                     <!--2-->
+                     <LinearLayout
+
+                         android:layout_marginLeft="25dp"
+                         android:layout_width="170dp"
+                         android:layout_height="180dp"
+                         android:background="@color/white"
+                         android:elevation="5dp"
+                         android:orientation="vertical"
+                         android:clipToOutline="true">
+
+                         <ImageView
+                             android:scaleType="centerCrop"
+                             android:src="@drawable/kfcbanner"
+                             android:layout_width="match_parent"
+                             android:layout_height="120dp"
+                             android:adjustViewBounds="true"></ImageView>
+                         <TextView
+
+                             android:paddingLeft="10dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:text="Lẩu - Nướng"
+                             android:gravity="center_vertical"
+                             android:textSize="17dp"
+                             android:textStyle="bold"></TextView
+                             >
+
+                     </LinearLayout>
+                 </LinearLayout>
+
+    </LinearLayout>
+        <!-- Combo's Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="7dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COMBO CHO BẠN"
+                    android:textStyle="bold"
+                    android:textSize="25dp">
+                </TextView>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:background="#808080">
+                </View>
+            </LinearLayout>
+             <!--Danh sách combo  -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/home_combo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal" />
+
+
+
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>
