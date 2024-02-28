@@ -3,19 +3,32 @@ package com.example.appbanthucannhanh.model;
 import java.io.Serializable;
 
 public class Food implements Serializable {
+    private int idFood;
     private String nameFood;
     private int priceFood;
     private String introFood;
     private int imageFood;
+    private String typeFood;
 
     public Food() {
+
     }
 
-    public Food(String nameFood, int priceFood, String introFood, int imageFood) {
+    public Food(int idFood, String nameFood, int priceFood, String introFood, int imageFood, String typeFood) {
+        this.idFood = idFood;
         this.nameFood = nameFood;
         this.priceFood = priceFood;
         this.introFood = introFood;
         this.imageFood = imageFood;
+        this.typeFood = typeFood;
+    }
+
+    public int getIdFood() {
+        return idFood;
+    }
+
+    public void setIdFood(int idFood) {
+        this.idFood = idFood;
     }
 
     public String getNameFood() {
@@ -48,5 +61,13 @@ public class Food implements Serializable {
 
     public void setImageFood(int imageFood) {
         this.imageFood = imageFood;
+    }
+
+    public String getTypeFood() {
+        return typeFood;
+    }
+
+    public void setTypeFood(String typeFood) {
+        this.typeFood = typeFood;
     }
 }

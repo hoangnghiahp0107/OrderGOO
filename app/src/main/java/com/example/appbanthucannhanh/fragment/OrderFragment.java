@@ -3,7 +3,9 @@ package com.example.appbanthucannhanh.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
@@ -12,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.appbanthucannhanh.R;
 import com.example.appbanthucannhanh.model.Food;
+import com.google.android.material.tabs.TabLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +22,8 @@ import com.example.appbanthucannhanh.model.Food;
  * create an instance of this fragment.
  */
 public class OrderFragment extends Fragment {
+    TabLayout tabLayout;
+    Toolbar toolbar;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,19 +63,65 @@ public class OrderFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_order, container, false);
+        View view = inflater.inflate(R.layout.fragment_order, container, false);
+        tabLayout = view.findViewById(R.id.tabLayout);
+        boolean tabSelected = false;
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if (tab.getPosition() == 0) {
+                    setFragment(new FoodFragment());
+                }
+
+                if (tab.getPosition() == 1) {
+                    setFragment(new OnePersonFragment());
+                }
+
+                if (tab.getPosition() == 2) {
+                    setFragment(new GroupFoodFragment());
+                }
+
+                if (tab.getPosition() == 3) {
+                    setFragment(new ChickenFragment());
+                }
+
+                if (tab.getPosition() == 4) {
+                    setFragment(new FastFoodFragment());
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                if (tabLayout.getSelectedTabPosition() == TabLayout.Tab.INVALID_POSITION) {
+                    setFragment(new FoodFragment()); // Thiết lập mặc định là FoodFragment
+                }
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+        if (!tabSelected) {
+            setFragment(new FoodFragment());
+        }
+        return view;
     }
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        Fragment childFragment = new FoodFragment();
+
+    void setFragment(Fragment fragment) {
+        if (fragment == null) {
+            return;
+        }
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.replace(R.id.recyclerFood, childFragment).commit();
+        transaction.replace(R.id.fragmentContainerView, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
+
 }
