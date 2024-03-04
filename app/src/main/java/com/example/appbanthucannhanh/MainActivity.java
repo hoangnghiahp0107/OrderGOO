@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.appbanthucannhanh.fragment.AdminFragment;
 import com.example.appbanthucannhanh.fragment.HomeFragment;
 import com.example.appbanthucannhanh.fragment.OrderFragment;
 import com.example.appbanthucannhanh.fragment.SettingFragment;
@@ -57,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (item.getItemId() == R.id.bottomOrder) {
                     fmNew = new OrderFragment();
+                    loadFragment(fmNew);
+                    return true;
+                }
+
+                if(item.getItemId()==R.id.bottomAdmin){
+                    fmNew = new AdminFragment();
                     loadFragment(fmNew);
                     return true;
                 }

@@ -24,4 +24,10 @@
         android:id="@+id/bottomSetting"
         android:icon="@drawable/menu">
     </item>
+    <item android:title="Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomAdmin"
+        android:icon="@drawable/admin">
+    </item>
 </menu>
