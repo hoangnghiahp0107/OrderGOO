@@ -114,13 +114,14 @@
                 android:textStyle="italic"
                 android:text="Bạn chưa có tài khoản?">
             </TextView>
+
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnSignUp"
                 android:layout_width="140dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:backgroundTint="#f49e06"
-                android:text="Đăng ký"/>
+                android:text="Đăng ký" />
         </LinearLayout>
 <!--        <TextView-->
 <!--            android:layout_width="wrap_content"-->

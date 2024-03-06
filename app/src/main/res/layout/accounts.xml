@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:stretchColumns="5">
+    <TableRow>
+        <TextView
+            android:text="Tài khoản"
+            android:padding="3dip" />
+        <TextView
+            android:text="Họ tên"
+            android:padding="3dip" />
+        <TextView
+            android:text="Địa chỉ"
+            android:padding="3dip" />
+        <TextView
+            android:text="Số điện thoại"
+            android:padding="3dip" />
+        <TextView
+            android:text="Mật khẩu"
+            android:padding="3dip" />
+        <TextView
+            android:text="Loại người dùng"
+            android:padding="3dip" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/userAccount"
+            android:text="Tài khoản"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/userName"
+            android:text="Họ tên"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/userAddress"
+            android:text="Địa chỉ"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/userPhone"
+            android:text="Số điện thoại"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/userPassword"
+            android:text="Mật khẩu"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/userRole"
+            android:text="Loại người dùng"
+            android:padding="3dip" />
+    </TableRow>
+</TableLayout>

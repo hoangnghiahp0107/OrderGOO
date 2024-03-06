@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615242758387",
+    "project_id": "dbordergo",
+    "storage_bucket": "dbordergo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615242758387:android:5f002bb6944bd49aab9f86",
+        "android_client_info": {
+          "package_name": "com.example.appbanthucannhanh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByoHNxgmT-PGB5aZrPPleQhy2ayUGshKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -85,7 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_input"
-                    android:inputType="text"
+                    android:inputType="text|textMultiLine|textCapSentences"
                     android:importantForAccessibility="no"
                     android:padding="15dp"/>
             </LinearLayout>
@@ -154,7 +154,7 @@
                     android:padding="15dp"/>
             </LinearLayout>
             <Button
-                android:id="@+id/btnSignUp"
+                android:id="@+id/btnRegister"
                 android:layout_width="140dp"
                 android:layout_height="60dp"
                 android:layout_margin="10dp"

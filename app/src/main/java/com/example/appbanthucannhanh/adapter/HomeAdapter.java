@@ -37,14 +37,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         holder.nameTextView.setText(data.getName());
         holder.priceTextView.setText(data.getPrice());
         holder.descriptionTextView.setText(data.getDescription());
-
-        // Set a click listener for the "Add" button if needed
-        // holder.addButton.setOnClickListener(new View.OnClickListener() {
-        //     @Override
-        //     public void onClick(View v) {
-        //         // Handle button click
-        //     }
-        // });
     }
 
     @Override
