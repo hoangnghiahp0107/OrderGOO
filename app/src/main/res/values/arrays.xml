@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_items">
+        <item>Danh Mục Món Ăn</item>
+        <item>Ưu Đãi</item>
+        <item>Món Mới</item>
+        <item>Combo 1 Người</item>
+        <item>Combo Nhóm</item>
+        <item>Gà Rán-Gà Quay</item>
+        <item>Burger-Cơm-Mì Ý</item>
+        <item>Thức Ăn Nhẹ</item>
+        <item>Thức Uống và Tráng Miệng</item>
+        <item>Upsell_2</item>
+    </string-array>
+
+    <string-array name="navigation_itemsLienHe">
+        <item>Liên hệ KFC</item>
+        <item>Theo dõi đơn hàng</item>
+        <item>Hệ thống Nhà Hàng</item>
+        <item>Liên hệ KFC</item>
+
+    </string-array>
+</resources>
